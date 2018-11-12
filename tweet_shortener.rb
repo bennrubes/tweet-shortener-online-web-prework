@@ -9,5 +9,5 @@ def word_substituter(tweet)
     if dictionary.keys.include?(word)
       word.replace dictionary[word]
     end}
-  tweet_string.join
+  tweet_string.join(" ")
 end
