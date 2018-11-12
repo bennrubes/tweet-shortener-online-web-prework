@@ -6,6 +6,6 @@ end
 def word_substituter(tweet_string)
   tweet_string.split(" ").each {|word| 
     if dictionary.keys.include?(word)
-      tweet_string.sub(word, dictionary[word])
+      word.replace dictionary[word]
     end}
 end
