@@ -4,7 +4,7 @@ def dictionary
 end
 
 def word_substituter(tweet_string)
-  tweet_string.split.each {|word| 
+  tweet_string.split(" ").each {|word| 
     if dictionary.keys.include?(word)
       word = dictionary[word]
     end}
