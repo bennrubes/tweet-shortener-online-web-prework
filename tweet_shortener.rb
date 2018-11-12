@@ -11,3 +11,5 @@ def word_substituter(tweet)
     end}
   tweet_string.join(" ")
 end
+
+def 
