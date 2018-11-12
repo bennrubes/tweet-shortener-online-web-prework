@@ -6,7 +6,7 @@ end
 def word_substituter(tweet)
   tweet_string = tweet.split(" ")
   tweet_string.each {|word| 
-    if dictionary.keys.include?(word)
+    if dictionary.keys.include?(word.downcase)
       word.replace dictionary[word]
     end}
   tweet_string.join(" ")
